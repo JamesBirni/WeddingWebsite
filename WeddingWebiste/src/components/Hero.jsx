@@ -10,10 +10,6 @@ export default function Hero() {
         
         {/* Left Column: Elegant content */}
         <div className="hero-content fade-in-up">
-          <div className="hero-badge">
-            <Compass className="badge-icon" size={14} />
-            <span>Adventuring Together in Grace</span>
-          </div>
           
           <h1 className="hero-title">
             James <span className="serif-and">&amp;</span> Kasia
@@ -35,15 +31,6 @@ export default function Hero() {
             casually playing sports together, our greatest adventure has been discovering our shared Catholic faith. 
             We are overjoyed to invite you to stand beside us on our special day.
           </p>
-
-          <div className="hero-actions">
-            <a href="#story" className="btn-primary">
-              Our Journey <Heart size={16} fill="currentColor" />
-            </a>
-            <a href="#faq" className="btn-secondary">
-              Guest Details
-            </a>
-          </div>
         </div>
 
         {/* Right Column: Premium framed couple photo */}
@@ -53,7 +40,7 @@ export default function Hero() {
           <div className="hero-image-container">
             <img 
               src={coupleImg} 
-              alt="James and Kasia in the mountains" 
+              alt="James and Kasia engagement photos" 
               className="hero-image"
             />
             <div className="hero-image-overlay">

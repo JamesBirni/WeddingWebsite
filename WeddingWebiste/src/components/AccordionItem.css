@@ -97,6 +97,63 @@
   color: var(--text-muted);
 }
 
+/* Links list and link styles */
+.accordion-links {
+  display: flex;
+  gap: 12px;
+  padding: 0 30px 18px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.accordion-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  font-size: 0.95rem;
+  color: var(--primary-forest);
+  background-color: rgba(91, 122, 106, 0.06);
+  border: 1px solid rgba(91, 122, 106, 0.12);
+  border-radius: 999px;
+  text-decoration: none;
+  transition: background-color 160ms ease, color 160ms ease, transform 160ms ease, box-shadow 160ms ease;
+  box-shadow: none;
+}
+
+.accordion-link::after {
+  content: '↗';
+  font-size: 0.78rem;
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+.accordion-link:hover {
+  background-color: var(--primary-sage);
+  color: var(--bg-cream);
+  border-color: var(--primary-sage);
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+}
+
+.accordion-link:focus-visible {
+  outline: 3px solid rgba(91, 122, 106, 0.18);
+  outline-offset: 2px;
+}
+
+.accordion-item.active .accordion-link {
+  background-color: var(--primary-sage);
+  color: var(--bg-cream);
+  border-color: var(--primary-sage);
+}
+
+/* Make sure link area matches mobile padding */
+@media (max-width: 768px) {
+  .accordion-links { padding: 0 20px 14px; gap: 10px; }
+  .accordion-link { padding: 7px 10px; font-size: 0.92rem; }
+}
+
 /* Responsiveness */
 @media (max-width: 768px) {
   .accordion-trigger {

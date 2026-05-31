@@ -21,7 +21,6 @@ export default function Footer() {
 
         <div className="footer-nav">
           <a href="#home" className="footer-link">Home</a>
-          <a href="#story" className="footer-link">Our Story</a>
           <a href="#faq" className="footer-link">FAQs</a>
         </div>
 

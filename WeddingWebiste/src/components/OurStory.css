@@ -1,0 +1,212 @@
+.story-section {
+  background-color: var(--bg-cream);
+  position: relative;
+  overflow: hidden;
+}
+
+.story-intro-desc {
+  max-width: 800px;
+  margin: -20px auto 60px;
+  text-align: center;
+}
+
+.story-intro-desc p {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+}
+
+/* Grid layout */
+.story-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 32px;
+  margin-bottom: 70px;
+}
+
+/* High Fidelity Cards */
+.story-card {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 20px;
+  padding: 40px;
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.story-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background-color: var(--card-accent);
+  transition: var(--transition-smooth);
+}
+
+.story-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+  border-color: rgba(91, 122, 106, 0.3);
+}
+
+.story-card:hover::before {
+  width: 8px;
+}
+
+/* Icons */
+.story-card-icon-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 16px;
+  background-color: rgba(91, 122, 106, 0.08);
+  color: var(--card-accent);
+  margin-bottom: 24px;
+  transition: var(--transition-smooth);
+}
+
+/* Custom coloring for specific cards */
+.card-camping .story-card-icon-wrapper {
+  background-color: rgba(91, 122, 106, 0.08);
+}
+.card-winter .story-card-icon-wrapper {
+  background-color: rgba(210, 144, 116, 0.08);
+}
+.card-games .story-card-icon-wrapper {
+  background-color: rgba(47, 72, 58, 0.08);
+}
+.card-faith .story-card-icon-wrapper {
+  background-color: rgba(210, 144, 116, 0.08);
+}
+
+.story-card:hover .story-card-icon-wrapper {
+  transform: scale(1.1) rotate(4deg);
+}
+
+.custom-cross-icon {
+  font-family: var(--font-serif);
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Card details */
+.story-card-subtitle {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--accent-terracotta);
+  font-weight: 600;
+  margin-bottom: 6px;
+}
+
+.story-card-title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: var(--primary-forest);
+  margin-bottom: 16px;
+}
+
+.story-card-desc {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  color: var(--text-muted);
+}
+
+/* Interactive subtle borders */
+.story-card-hover-border {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 0 0;
+  border-color: transparent transparent var(--card-accent) transparent;
+  transition: var(--transition-smooth);
+  opacity: 0.15;
+}
+
+.story-card:hover .story-card-hover-border {
+  border-width: 0 0 40px 40px;
+}
+
+/* CTA Pope Quote block */
+.story-cta-box {
+  background: linear-gradient(135deg, var(--primary-forest) 0%, #1c2d24 100%);
+  border-radius: 24px;
+  padding: 50px 40px;
+  text-align: center;
+  color: var(--bg-cream);
+  box-shadow: var(--shadow-md);
+  position: relative;
+  overflow: hidden;
+}
+
+.story-cta-box::after {
+  content: '✝';
+  position: absolute;
+  font-size: 12rem;
+  color: rgba(255, 255, 255, 0.02);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: var(--font-serif);
+  pointer-events: none;
+}
+
+.story-cta-box h3 {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: var(--bg-cream);
+  max-width: 800px;
+  margin: 0 auto 16px;
+  font-weight: 400;
+}
+
+.story-cta-box p {
+  color: var(--accent-terracotta);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.95rem;
+}
+
+/* Responsive breakdowns */
+@media (max-width: 992px) {
+  .story-grid {
+    gap: 24px;
+  }
+  .story-card {
+    padding: 30px;
+  }
+  .story-card-title {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .story-grid {
+    grid-template-columns: 1fr;
+  }
+  .story-intro-desc p {
+    font-size: 1.05rem;
+  }
+  .story-cta-box {
+    padding: 40px 20px;
+  }
+  .story-cta-box h3 {
+    font-size: 1.4rem;
+  }
+}

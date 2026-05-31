@@ -1,0 +1,116 @@
+.accordion-item {
+  background-color: var(--bg-white);
+  border: 1px solid var(--border-light);
+  border-radius: 16px;
+  overflow: hidden;
+  transition: var(--transition-smooth);
+  box-shadow: var(--shadow-sm);
+}
+
+.accordion-item:hover {
+  border-color: rgba(91, 122, 106, 0.35);
+  box-shadow: var(--shadow-md);
+}
+
+.accordion-item.active {
+  border-color: var(--primary-sage);
+  box-shadow: var(--shadow-md);
+  background-color: rgba(250, 247, 242, 0.4);
+}
+
+/* Button Trigger */
+.accordion-trigger {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background: none;
+  border: none;
+  padding: 24px 30px;
+  cursor: pointer;
+  text-align: left;
+  transition: var(--transition-fast);
+}
+
+.accordion-question {
+  font-family: var(--font-serif);
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--primary-forest);
+  line-height: 1.4;
+  transition: var(--transition-fast);
+}
+
+.accordion-item.active .accordion-question {
+  color: var(--primary-forest);
+}
+
+/* Chevron animations */
+.accordion-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: rgba(91, 122, 106, 0.06);
+  color: var(--primary-sage);
+  transition: var(--transition-smooth);
+  flex-shrink: 0;
+}
+
+.accordion-item:hover .accordion-icon-wrapper {
+  background-color: rgba(91, 122, 106, 0.12);
+  color: var(--primary-forest);
+}
+
+.accordion-item.active .accordion-icon-wrapper {
+  background-color: var(--primary-sage);
+  color: var(--bg-cream);
+  transform: rotate(180deg);
+}
+
+.accordion-chevron {
+  transition: var(--transition-smooth);
+}
+
+/* CSS Grid dynamic height transition technique */
+.accordion-content-wrapper {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.accordion-item.active .accordion-content-wrapper {
+  grid-template-rows: 1fr;
+}
+
+.accordion-content-inner {
+  overflow: hidden;
+}
+
+.accordion-answer {
+  padding: 0 30px 24px;
+  font-size: 1.05rem;
+  line-height: 1.65;
+  color: var(--text-muted);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .accordion-trigger {
+    padding: 18px 20px;
+  }
+  .accordion-question {
+    font-size: 1.1rem;
+  }
+  .accordion-answer {
+    padding: 0 20px 18px;
+    font-size: 0.98rem;
+  }
+  .accordion-icon-wrapper {
+    width: 30px;
+    height: 30px;
+  }
+}

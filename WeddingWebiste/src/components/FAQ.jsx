@@ -23,15 +23,39 @@ export default function FAQ() {
     {
       id: 3,
       question: "What are the details for the reception, and when does it start?",
-      answer: "Our indoor reception will be held at the beautiful Sunset Ranch Golf & Country Club (5101 Upper Booth Rd S). Celebrations begin at 5:30 PM with cocktails, dinner, and dancing to follow! The venue is fully accessible and indoors, so feel free to wear your favorite heels or dress shoes.",
+      answer: "Our indoor reception with an outdoor patio will be held at the beautiful Sunset Ranch Golf & Country Club (5101 Upper Booth Rd S). Celebrations begin at 5:30 PM with cocktails, dinner, and dancing to follow! The venue is fully accessible and indoors, so feel free to wear your favorite heels or dress shoes.",
       links:[]
     },
 
     {
       id: 4,
       question: "Where is the registry located?",
-      answer: "The registry can be found at the link below. We also will be accepting cash gifts, which will go towards our honeymoon and future adventures together! We are so grateful for your generosity and support as we start this new chapter of our lives.",
+      answer: "The registry can be found at the link below. We also will be accepting cash gifts, Purchased gifts can either be brought to the reception (there will be a designated table) or sent to the following address: 4805 Canyon Ridge Crescent). Cash gifts will also be accepted and can be either sent via e-transfer to kas.cut@outlook.com or placed in the cards box at the reception (will be on the gifts table).", 
       links: [{name: "Registry Link", url: "https://www.myregistry.com/wedding-registry/kasia-cutforth-and-james-birnie-kelowna-bc/5364682"}]
+    },
+    {
+      id: 5,
+      question: "What does the bar situation look like?",
+      answer: "Each adult guest (19+)  will get 2 drink tickets, afterwards guests will have to pay for additional drinks (payment details here). There will be unlimited non-alcoholic drinks.",
+      links: []
+    },
+    {
+      id: 6,
+      question: "Where can I park for the ceremony and reception?",
+      answer: "Free parking is available at both the ceremony and reception locations. Please do NOT drink and drive, if needed you can leave your vehicle in the reception parking lot overnight.",
+      links: []
+    },
+    {
+      id: 7,
+      question: "When does the partying end?",
+      answer: "The festivities will end @12:00am. ",
+      links: []
+    },
+    {
+      id: 8,
+      question: "Can phones be used to take pictures during the ceremony and reception?",
+      answer: "We ask that all phones be put away and on silent for the duration of the ceremony. We would like everyone to be in the moment and present with us for the beautiful events taking place. Phones/photo taking are welcome at the reception. We will have a QR code where you can upload your photos from the night and see/download photos from others. We think this is a fun way to see the night from different perspectives.",
+      links: []
     }
   ];
   // =========================================================================

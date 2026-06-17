@@ -26,10 +26,8 @@ export default function Hero() {
           </div>
 
           <p className="hero-intro-text">
-            Welcome to our wedding celebration! We share a deep love for God's beautiful creation. 
-            Whether pitching our tent under the stars, hosting board games nights with friends, or 
-            casually playing sports together, our greatest adventure has been discovering our shared Catholic faith. 
-            We are overjoyed to invite you to stand beside us on our special day.
+            Welcome to our wedding website! Here you can find answers to some frequently asked questions. 
+            Again, we are looking forward to seeing you all and celebrating the beginning of our forever journey with you. 
           </p>
         </div>
 

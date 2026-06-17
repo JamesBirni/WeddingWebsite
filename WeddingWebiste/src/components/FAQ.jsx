@@ -36,7 +36,7 @@ export default function FAQ() {
     {
       id: 5,
       question: "What does the bar situation look like?",
-      answer: "Each adult guest (19+)  will get 2 drink tickets, afterwards guests will have to pay for additional drinks (payment details here). There will be unlimited non-alcoholic drinks.",
+      answer: "Each adult guest (19+)  will get 2 drink tickets, afterwards guests will have to pay for additional drinks. There will be unlimited non-alcoholic drinks.",
       links: []
     },
     {

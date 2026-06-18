@@ -23,14 +23,14 @@ export default function FAQ() {
     {
       id: 3,
       question: "What are the details for the reception, and when does it start?",
-      answer: "Our indoor reception with an outdoor patio will be held at the beautiful Sunset Ranch Golf & Country Club (5101 Upper Booth Rd S). Celebrations begin at 5:30 PM with cocktails, dinner, and dancing to follow! The venue is fully accessible and indoors, so feel free to wear your favorite heels or dress shoes.",
+      answer: "Our indoor reception with an outdoor patio will be held at the beautiful Sunset Ranch Golf & Country Club (5101 Upper Booth Rd S). Celebrations begin at 5:30 PM",
       links:[]
     },
 
     {
       id: 4,
       question: "Where is the registry located?",
-      answer: "The registry can be found at the link below. We also will be accepting cash gifts, Purchased gifts can either be brought to the reception (there will be a designated table) or sent to the following address: 4805 Canyon Ridge Crescent). Cash gifts will also be accepted and can be either sent via e-transfer to kas.cut@outlook.com or placed in the cards box at the reception (will be on the gifts table).", 
+      answer: "The registry can be found at the link below. Purchased gifts can either be brought to the reception (there will be a designated table) or sent to the following address: 4805 Canyon Ridge Crescent). Cash gifts will also be accepted and can be either sent via e-transfer to kas.cut@outlook.com or placed in the cards box at the reception (will be on the gifts table).", 
       links: [{name: "Registry Link", url: "https://www.myregistry.com/wedding-registry/kasia-cutforth-and-james-birnie-kelowna-bc/5364682"}]
     },
     {
